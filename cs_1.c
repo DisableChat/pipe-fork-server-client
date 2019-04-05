@@ -35,10 +35,10 @@ int main()
 {
   // client pid value
   pid_t clientPID;
-  // buffer
-  char buffer[MSG_LENGTH];
   // declaring msg_t var
   msg_t msg;
+  // buffer
+  char buffer[MSG_LENGTH*2];
 
   // Pipe[0] corrosponds to read and pipe[1] corrosponds to write
   int p[2];
