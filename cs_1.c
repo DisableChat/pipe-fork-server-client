@@ -89,8 +89,7 @@ int main()
       // Error Non recognized command
       else
       {
-        write(WRITE, "\nError: Entered unknown command", 32);
-        fflush(stdout);
+        printf("\nError: entered uknown command");
       }
     }
   }
