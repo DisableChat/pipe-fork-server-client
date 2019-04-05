@@ -1,3 +1,14 @@
+//******************************************************************************
+// File:        cs_1.c
+// Author:      Wesley Ryder
+// Date:        4-3-19
+// Description: To use pipes and forks to create a server/client application
+//              which in this case is strictly for local use and in this
+//              specific example only tests the use of pipe and fork for
+//              displaying the mssg sent fromthe client back to the server
+//              on the same terminal
+//******************************************************************************
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
