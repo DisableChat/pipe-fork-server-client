@@ -165,7 +165,7 @@ int main()
     //TIME COMMAND
     else if (strstr(str, "Time") != NULL || strstr(str, "time") != NULL)
     {
-      // Set corrsponding type and suptype
+      // Set corrsponding type and subtype
       msgOne.subtype = TIME;
       msgOne.type = COMMAND;
 

@@ -9,7 +9,7 @@ default: all
 %.o: %.c $(HEADERS)
 	gcc $(FLAGS) -c $< -o $@
 
-all: server client
+all: cs_2_server cs_2_client
 
 server: $(OBJECTS1)
 	gcc $(FLAGS) $(OBJECTS1) $(LIBS) -o $@
@@ -20,4 +20,5 @@ client: $(OBJECTS2)
 clean:
 	 -rm -f $(OBJECTS1)
 	 -rm -f $(OBJECTS2)
-	 -rm -f server client *~
+	 -rm -f cs_2_server
+	 -rm -f cs_2_client
