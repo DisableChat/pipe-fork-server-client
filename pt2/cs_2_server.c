@@ -1,7 +1,7 @@
 //******************************************************************************
 // File:        cs_2_server.c
 // Author:      Wesley Ryder
-// Date:        4-3-19
+// Date:        4-10-19
 // Description: To use pipes and forks to create a server/client application
 //              using pipes and forks this is the server implementation
 //              *note* references were made on general info about pipes from

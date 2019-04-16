@@ -7,15 +7,15 @@ FLAGS =  -O3 -g
 default: all
 
 %.o: %.c $(HEADERS)
-	gcc $(FLAGS) -c $< -o $@
+	gcc -w $(FLAGS) -c $< -o $@
 
 all: cs_2_server cs_2_client
 
 server: $(OBJECTS1)
-	gcc $(FLAGS) $(OBJECTS1) $(LIBS) -o $@
+	gcc -w $(FLAGS) $(OBJECTS1) $(LIBS) -o $@
 
 client: $(OBJECTS2)
-	gcc $(FLAGS) $(OBJECTS2) $(LIBS) -o $@
+	gcc -w $(FLAGS) $(OBJECTS2) $(LIBS) -o $@
 
 clean:
 	 -rm -f $(OBJECTS1)
