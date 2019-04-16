@@ -1,16 +1,16 @@
-LIBS = 
-HEADERS = 
-OBJECTS1 = server.o 
-OBJECTS2 = client.o
-FLAGS =  -O3 -g 
+LIBS =
+HEADERS =
+OBJECTS1 = cs_2_server.o
+OBJECTS2 = cs_2_client.o
+FLAGS =  -O3 -g
 
 default: all
 
 %.o: %.c $(HEADERS)
-	gcc $(FLAGS) -c $< -o $@ 
+	gcc $(FLAGS) -c $< -o $@
 
 all: server client
-    
+
 server: $(OBJECTS1)
 	gcc $(FLAGS) $(OBJECTS1) $(LIBS) -o $@
 
@@ -18,5 +18,6 @@ client: $(OBJECTS2)
 	gcc $(FLAGS) $(OBJECTS2) $(LIBS) -o $@
 
 clean:
-	 -rm -f $(OBJECTS)
+	 -rm -f $(OBJECTS1)
+	 -rm -f $(OBJECTS2)
 	 -rm -f server client *~
